@@ -1,0 +1,61 @@
+@page "/current"
+
+@using BlazorServerWeatherApp.Data
+@inject DarkSkyResponseService DarkSkyResponseService
+
+<h1>Current Forecast</h1>
+
+@if (darkSkyResponse == null)
+{
+    <EditForm Model="@exampleModel" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <InputText id="zip" @bind-Value="exampleModel.Zip" />
+
+        <button type="submit">Submit</button>
+    </EditForm>
+}
+else
+{
+    <p><em>@zipCodeResponse.City, @zipCodeResponse.State</em></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Summary</th>
+                <th>Temp. (F)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@darkSkyResponse.Currently.Summary</td>
+                <td>@Math.Round(darkSkyResponse.Currently.Temperature)</td>
+            </tr>
+        </tbody>
+    </table>
+    <EditForm Model="@exampleModel" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <InputText id="zip" @bind-Value="exampleModel.Zip" />
+
+        <button type="submit">Submit</button>
+    </EditForm>
+}
+
+@code {
+    private DarkSkyResponse darkSkyResponse;
+    private ZipCodeResponse zipCodeResponse;
+
+    private int zip;
+
+    private ExampleModel exampleModel = new ExampleModel();
+    protected async Task HandleValidSubmit()
+    {
+        zip = int.Parse(exampleModel.Zip);
+        zipCodeResponse = await ZipCodeResponseService.GetZipCodeResponseAsync(zip);
+        double lat = zipCodeResponse.Lat;
+        double lng = zipCodeResponse.Lng;
+        darkSkyResponse = await DarkSkyResponseService.GetDarkSkyResponseAsync(lat, lng);
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "3jHpTZRWm99+rSZnEyW6wy2quzJU7Y1DTatneCA3o4QFxDgVa0n0qZrKti37hWbPAHu5LL4hwZ6viEZaCbFfgg==",
+  "success": true,
+  "projectFilePath": "/Users/randyroughhouse/Documents/Programming Projects/ASP.NET/BlazorServerWeatherApp/BlazorServerWeatherApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.configuration/3.1.4/microsoft.extensions.configuration.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.4/microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.configuration.binder/3.1.4/microsoft.extensions.configuration.binder.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.4/microsoft.extensions.dependencyinjection.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.4/microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.http/3.1.4/microsoft.extensions.http.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.http.polly/3.1.4/microsoft.extensions.http.polly.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.logging/3.1.4/microsoft.extensions.logging.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.4/microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.options/3.1.4/microsoft.extensions.options.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/microsoft.extensions.primitives/3.1.4/microsoft.extensions.primitives.3.1.4.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/polly/7.1.0/polly.7.1.0.nupkg.sha512",
+    "/Users/randyroughhouse/.nuget/packages/polly.extensions.http/3.0.0/polly.extensions.http.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

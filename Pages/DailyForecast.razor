@@ -1,0 +1,77 @@
+@page "/daily"
+
+@using BlazorServerWeatherApp.Data
+@inject DarkSkyResponseService DarkSkyResponseService
+
+<h1>Daily Forecast</h1>
+
+@if (darkSkyResponse == null)
+{
+    <EditForm Model="@exampleModel" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <InputText id="zip" @bind-Value="exampleModel.Zip" />
+
+        <button type="submit">Submit</button>
+    </EditForm>
+}
+else
+{
+    <p><em>@zipCodeResponse.City, @zipCodeResponse.State</em></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Summary</th>
+                <th>High Temp. (F)</th>
+                <th>Low Temp. (F)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < 5; i++)
+            {
+                <tr>
+                    <td>@UnixTimeStampToDateTime(darkSkyResponse.Daily.Data[i].Time).ToShortDateString()</td>
+                    <!--<td>@darkSkyResponse.Daily.Data[i].Time</td>-->
+                    <td>@darkSkyResponse.Daily.Data[i].Summary</td>
+                    <td>@Math.Round(darkSkyResponse.Daily.Data[i].TemperatureHigh)</td>
+                    <td>@Math.Round(darkSkyResponse.Daily.Data[i].TemperatureLow)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <EditForm Model="@exampleModel" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <InputText id="zip" @bind-Value="exampleModel.Zip" />
+
+        <button type="submit">Submit</button>
+    </EditForm>
+}
+
+@code {
+    private DarkSkyResponse darkSkyResponse;
+    private ZipCodeResponse zipCodeResponse;
+
+    private int zip;
+
+    private ExampleModel exampleModel = new ExampleModel();
+    protected async Task HandleValidSubmit()
+    {
+        zip = int.Parse(exampleModel.Zip);
+        zipCodeResponse = await ZipCodeResponseService.GetZipCodeResponseAsync(zip);
+        double lat = zipCodeResponse.Lat;
+        double lng = zipCodeResponse.Lng;
+        darkSkyResponse = await DarkSkyResponseService.GetDarkSkyResponseAsync(lat, lng);
+    }
+
+    public static DateTime UnixTimeStampToDateTime( int unixTimeStamp )
+    {
+        // Unix timestamp is seconds past epoch
+        System.DateTime dtDateTime = new DateTime(1970,1,1,0,0,0,0,System.DateTimeKind.Utc);
+        dtDateTime = dtDateTime.AddSeconds( unixTimeStamp ).ToLocalTime();
+        return dtDateTime;
+    }
+}
