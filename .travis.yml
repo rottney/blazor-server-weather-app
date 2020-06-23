@@ -1,6 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
+﻿#<?xml version="1.0" encoding="utf-8" ?>
+#<configuration>
     language: csharp
     solution: BlazorServerWeatherApp.sln
-    <!--Your comment-->
-</configuration>
+#</configuration>
+
+language: csharp
+solution: BlazorServerWeatherApp.sln

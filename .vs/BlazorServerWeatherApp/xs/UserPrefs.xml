@@ -6,9 +6,11 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BlazorServerWeatherApp" expanded="True" selected="True">
+          <Node name="BlazorServerWeatherApp" expanded="True">
             <Node name="Solution Items" expanded="True" />
-            <Node name="BlazorServerWeatherApp" expanded="True" />
+            <Node name="BlazorServerWeatherApp" expanded="True">
+              <Node name="README.md" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
