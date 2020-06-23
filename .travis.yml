@@ -1,8 +1,9 @@
-﻿#<?xml version="1.0" encoding="utf-8" ?>
-#<configuration>
-    language: csharp
-    solution: BlazorServerWeatherApp.sln
-#</configuration>
-
-language: csharp
+﻿language: csharp
 solution: BlazorServerWeatherApp.sln
+
+jobs:
+    include:
+        - dotnet: 2.1.502
+        mono: none
+        env: DOTNETCORE=2  # optional, can be used to take different code paths in your script
+        - mono: latest
