@@ -1,16 +1,14 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{FF3F2E85-0EE1-40F8-9675-7F094A12D8AE}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName=".travis.yml" Line="6" Column="1" />
+      <File FileName=".travis.yml" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BlazorServerWeatherApp" expanded="True">
+          <Node name="BlazorServerWeatherApp" expanded="True" selected="True">
             <Node name="Solution Items" expanded="True" />
-            <Node name="BlazorServerWeatherApp" expanded="True">
-              <Node name=".travis.yml" selected="True" />
-            </Node>
+            <Node name="BlazorServerWeatherApp" expanded="True" />
           </Node>
         </State>
       </Pad>

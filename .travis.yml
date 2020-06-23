@@ -2,4 +2,5 @@
 <configuration>
     language: csharp
     solution: BlazorServerWeatherApp.sln
+    <!--Your comment-->
 </configuration>
