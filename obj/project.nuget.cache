@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YrFIZCBHcvL0GpxLhmHjocutt0J4b067j12G0v1Fy3C/amyEcQ5v7xKlFWtieXbHEnuERxk6OmuMTjXBnyp/0A==",
+  "dgSpecHash": "HfnX6ZGNLKzT+oQF77TQNIbIT1dBe57w0U5MCv/IjFLJi+iRXE3GQKc+Be3rH87lQ6MVAgbjMWxTpq0gdK9kVA==",
   "success": true,
   "projectFilePath": "/Users/randyroughhouse/Documents/Programming Projects/ASP.NET/BlazorServerWeatherApp/BlazorServerWeatherApp.csproj",
   "expectedPackageFiles": [
