@@ -1,7 +1,6 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{FF3F2E85-0EE1-40F8-9675-7F094A12D8AE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="obj/project.assets.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Index.razor">
     <Files>
-      <File FileName=".travis.yml" Line="12" Column="1" />
       <File FileName="Pages/Index.razor" Line="9" Column="1" />
       <File FileName="Shared/MainLayout.razor" Line="16" Column="1" />
       <File FileName="Shared/NavMenu.razor" Line="14" Column="14" />
@@ -11,10 +10,12 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BlazorServerWeatherApp" expanded="True" selected="True">
+          <Node name="BlazorServerWeatherApp" expanded="True">
             <Node name="Solution Items" expanded="True" />
             <Node name="BlazorServerWeatherApp" expanded="True">
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Index.razor" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Shared" expanded="True" />
               <Node name="wwwroot" expanded="True" />
