@@ -1,7 +1,8 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{FF3F2E85-0EE1-40F8-9675-7F094A12D8AE}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Index.razor">
     <Files>
-      <File FileName=".travis.yml" Line="7" Column="1" />
+      <File FileName=".travis.yml" Line="15" Column="1" />
+      <File FileName="Pages/Index.razor" Line="5" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +10,9 @@
           <Node name="BlazorServerWeatherApp" expanded="True">
             <Node name="Solution Items" expanded="True" />
             <Node name="BlazorServerWeatherApp" expanded="True">
-              <Node name="README.md" selected="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Index.razor" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
