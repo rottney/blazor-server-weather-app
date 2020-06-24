@@ -9,6 +9,3 @@ solution: BlazorServerWeatherApp.sln
 # let's try...
 deploy:
   provider: azure_web_apps
-  username: "rottney123@gmail.com"
-  password: "Gu3st..." # encryptMe
-  site: "https://blazorserverweatherapp.azurewebsites.net"
